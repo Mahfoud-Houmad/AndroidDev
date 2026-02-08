@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,41 +11,33 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.textfield.TextInputEditText;
+public class Menu extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-    Button btn;
-    TextView t;
-    Button back ;
-    TextInputEditText t1;
-    TextInputEditText t2;
-    TextInputEditText t3;
+    Button tp1_1;
+    Button tp1_2 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-
-        btn = findViewById(R.id.btn);
-        t1 = findViewById(R.id.t1) ;
-        t2 = findViewById(R.id.t2) ;
-        t3 = findViewById(R.id.t3) ;
-        back = findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_menu);
+        tp1_1 = findViewById(R.id.tp1_1);
+        tp1_2 = findViewById(R.id.tp1_2);
+        tp1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Menu.class);
+                Intent i = new Intent(Menu.this, MainActivity.class);
                 startActivity(i);
             }
         });
-        btn.setOnClickListener(new View.OnClickListener() {
+
+        tp1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String text = String.valueOf(t1.getText());
-                t2.setText(text);
-                t3.setText(String.valueOf((text.length())));
+                Intent i = new Intent(Menu.this, MainActivity2.class);
+                startActivity(i);
             }
         });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

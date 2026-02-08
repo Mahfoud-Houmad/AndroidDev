@@ -1,5 +1,6 @@
 package com.example.androiddev;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     Button multiply;
     Button division;
     Button clear;
-
+    Button back2;
     TextInputEditText txt1;
     TextInputEditText txt2;
 
@@ -38,6 +39,14 @@ public class MainActivity2 extends AppCompatActivity {
         txt1 = findViewById(R.id.txt1);
         txt2 = findViewById(R.id.txt2);
         res = findViewById(R.id.res);
+        back2 = findViewById(R.id.back2);
+        back2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity2.this, Menu.class);
+                startActivity(i);
+            }
+        });
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
