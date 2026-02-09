@@ -25,7 +25,7 @@ public class Menu extends AppCompatActivity {
         tp1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Menu.this, MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
             }
         });
@@ -33,7 +33,7 @@ public class Menu extends AppCompatActivity {
         tp1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Menu.this, MainActivity2.class);
+            Intent i = new Intent(getApplicationContext(), MainActivity2.class);
                 startActivity(i);
             }
         });
