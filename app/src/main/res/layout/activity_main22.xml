@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2_2">
+
+    <TextView
+        android:id="@+id/titreAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="Apprends les animaux"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layA1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgCat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_cat" />
+
+        <ImageButton
+            android:id="@+id/imgDog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_dog" />
+
+        <ImageButton
+            android:id="@+id/imgRabbit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_rabbit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layA2">
+
+        <ImageButton
+            android:id="@+id/imgPenguin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_penguin" />
+
+        <ImageButton
+            android:id="@+id/imgElephant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_elephant" />
+
+        <ImageButton
+            android:id="@+id/imgBear"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_bear" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layA1">
+
+        <ImageButton
+            android:id="@+id/imgFox"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_fox" />
+
+        <ImageButton
+            android:id="@+id/imgCrow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_crow" />
+
+        <ImageButton
+            android:id="@+id/imgSquerrel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20px"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_squerrel" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:backgroundTint="#505050"
+        android:text="Retour"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

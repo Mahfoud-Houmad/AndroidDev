@@ -15,6 +15,8 @@ public class Menu extends AppCompatActivity {
 
     Button tp1_1;
     Button tp1_2 ;
+    Button tp2_1;
+    Button tp2_2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,8 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         tp1_1 = findViewById(R.id.tp1_1);
         tp1_2 = findViewById(R.id.tp1_2);
+        tp2_1 = findViewById(R.id.tp2_1);
+        tp2_2 = findViewById(R.id.tp2_2);
         tp1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +37,22 @@ public class Menu extends AppCompatActivity {
         tp1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                startActivity(i);
+            }
+        });
+
+        tp2_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity2_1.class);
+                startActivity(i);
+            }
+        });
+        tp2_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity2_2.class);
                 startActivity(i);
             }
         });
